@@ -146,5 +146,3 @@ E claro… *farmar áurea como de costume.* 😉
 git clone https://github.com/Sants-Coder/why-not.git
 cd why-not
 code .
-
----
