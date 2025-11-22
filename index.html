@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Not?</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/faviicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Sawarabi+Gothic&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!--HEADER-->
+    <header>
+        <div class="logo"><a href="#">Why Not?</a></div>
+
+        <nav>
+            <button class="btn-buscar" onclick="openSpotlight()">
+                Buscar <span class="shortcut">(CTRL + K)</span>
+            </button>
+
+
+            <label class="theme-toggle">
+                <input id="themeToggle" type="checkbox" aria-label="Alternar tema">
+                <span class="theme-slider">
+                    <span class="icon-sun" aria-hidden></span>
+                    <span class="icon-moon" aria-hidden></span>
+                </span>
+            </label>
+        </nav>
+    </header>
+
+    <!--SPOTLIGHT-->
+    <div id="spotlight" class="spotlight">
+        <div class="spotlight-box">
+            <input type="text" id="spotlightInput" placeholder="Digite para buscar... (ESC para fechar)">
+            <ul id="spotlightResults"></ul>
+        </div>
+    </div>
+
+    <!--MAIN-->
+    <main>
+
+        <section class="hero">
+            <div class="hero-text">
+                <h1>"Quanto mais difícil a vitória, maior a felicidade de vencer."</h1>
+            </div>
+        </section>
+
+        <section id="Sobre">
+            <h2>O Começo de Tudo</h2>
+            <p>
+                Este é o seu "Dia Um". Um lembrete de que cada grande jornada começa com um único passo. Aqui, buscamos
+                a faísca que acende a autoconfiança e a força para transformar sonhos em realidade, um dia de cada vez.
+
+                É a página que te lembra do que você nasceu para ser. O lugar onde você reencontra sua própria força,
+                encara suas verdades e desperta a vontade de correr atrás dos seus sonhos — sem desculpas, sem esperar o
+                momento perfeito, apenas começando. Aqui, cada linha existe para te empurrar para frente. Aqui, você
+                decide não parar. <i>"E, claro… farma aúrea como de costume"</i>.
+            </p>
+        </section>
+
+        <section id="Frases">
+            <h2>Seja Forte</h2>
+            <div class="Frases-container">
+                <div class="Frases-card">
+                    <blockquote>"Acredite em si mesmo e você será imparável."</blockquote>
+                </div>
+                <div class="Frases-card">
+                    <blockquote>"Cada dia é uma nova oportunidade para brilhar."</blockquote>
+                </div>
+                <div class="Frases-card">
+                    <blockquote>"Se você pode sonhar, pode realizar."</blockquote>
+                </div>
+                <div class="Frases-card">
+                    <blockquote>"A persistência leva ao sucesso."</blockquote>
+                </div>
+                <div class="Frases-card">
+                    <blockquote>"A jornada mais longa começa com um único passo."</blockquote>
+                </div>
+                <div class="Frases-card">
+                    <blockquote>"Sua determinação é sua maior força."</blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!--Galeria-->
+        <section id="Galeria" class="Galeria">
+            <h2>Galeria</h2>
+            <div class="galeria-container">
+                <div class="galeria-card"><img src="img/motivation-one.jpeg" alt=""></div>
+                <div class="galeria-card"><img src="img/motivation-two.jpeg" alt=""></div>
+                <div class="galeria-card"><img src="img/motivation-tree.jpeg" alt=""></div>
+                <div class="galeria-card"><img src="img/motivation-four.jpeg" alt=""></div>
+                <div class="galeria-card"><img src="img/motivation-five.jpeg" alt=""></div>
+                <div class="galeria-card"><img src="img/motivation-six.jpeg" alt=""></div>
+                <div class="galeria-card"><img src="img/motivation-seven.jpeg" alt=""></div>
+                <div class="galeria-card"><img src="img/motivation-eight.jpeg" alt=""></div>
+                <div class="galeria-card"><img src="img/motivation-nine.jpeg" alt=""></div>
+                <div class="galeria-card"><img src="img/motivation-ten.jpeg" alt=""></div>
+                <div class="galeria-card"><img src="img/motivation-eleven.jpeg" alt=""></div>
+                <div class="galeria-card"><img src="img/motivation-twelve.jpeg" alt=""></div>
+                <div class="galeria-card"><img src="img/motivation-treetenn.jpeg" alt=""></div>
+                <div class="galeria-card"><img src="img/motivation-fourtenn.png" alt=""></div>
+                <div class="galeria-card"><img src="img/motivation-fivetenn.jpeg" alt=""></div>
+            </div>
+        </section>
+
+        <!--Mentalidad-->
+        <section id="Mentalidade" class="mentalidade-section">
+            <h2>Mentalidade</h2>
+
+            <p class="mentalidade-intro">
+                Sua mente é a arma mais poderosa que você tem.
+                A forma como você pensa define a forma como você age — e o que você conquista.
+            </p>
+
+            <div class="mentalidade-container">
+                <div class="mentalidade-card">
+                    <h3>Foco</h3>
+                    <p>A energia segue a atenção. Onde seu foco está, sua vida vai atrás.</p>
+                </div>
+
+                <div class="mentalidade-card">
+                    <h3>Resiliência</h3>
+                    <p>Uma mente forte entende que dor é parte do crescimento e não foge dela.</p>
+                </div>
+
+                <div class="mentalidade-card">
+                    <h3>Disciplina</h3>
+                    <p>Disciplina é fazer o que precisa ser feito mesmo quando você não quer.</p>
+                </div>
+
+                <div class="mentalidade-card">
+                    <h3>Identidade</h3>
+                    <p>Você age de acordo com quem acredita ser. Mude a identidade, mude a vida.</p>
+                </div>
+
+                <div class="mentalidade-card">
+                    <h3>Autodomínio</h3>
+                    <p>Quem domina a si mesmo nunca é controlado pelo mundo.</p>
+                </div>
+
+                <div class="mentalidade-card">
+                    <h3>Constância</h3>
+                    <p>O que você faz todos os dias constrói quem você se torna.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!--Inspiracao-->
+        <section id="Inspiracao" class="inspiracao-section">
+            <h2>Inspiração</h2>
+
+            <p class="inspiracao-intro">
+                Explore conteúdos que elevam sua mente e ampliam sua visão de quem você pode se tornar.
+                A cada clique, um novo estímulo.
+            </p>
+
+            <div class="inspiracao-container">
+                <div class="inspiracao-card">
+                    <h3>Vídeo: Foco Inquebrável</h3>
+                    <a href="https://www.youtube.com/watch?v=nY8_Wt7LuF8" target="_blank">Assista agora</a>
+                </div>
+
+                <div class="inspiracao-card">
+                    <h3>Artigo: A Arte da Resiliência</h3>
+                    <a href="https://blog-educacao.sesirs.org.br/a-arte-da-resiliencia/" target="_blank">Leia aqui</a>
+                </div>
+
+                <div class="inspiracao-card">
+                    <h3>Vídeo: Disciplina – O Poder do Hábito</h3>
+                    <a href="https://www.youtube.com/watch?v=8Sm0A1IQZNY" target="_blank">Assista agora</a>
+                </div>
+
+                <div class="inspiracao-card">
+                    <h3>Quem você escolhe ser?</h3>
+                    <a href="https://www.youtube.com/watch?v=rapH3oDi-sY" target="_blank">Assista agora</a>
+                </div>
+            </div>
+        </section>
+
+        <!--Ícones-->
+        <section id="Icones" class="icones-section">
+            <div class="icones-overlay">
+
+                <h2>Ícones da Superação</h2>
+                <p class="icones-text">
+                    Eles não apenas venceram. Eles mudaram a forma como pensamos sobre esforço, coragem e grandeza.
+                    Deixe que suas histórias acendam o fogo dentro de você.
+                </p>
+
+                <div class="icones-container">
+
+                    <div class="icone-card">
+                        <h3>Ayrton Senna</h3>
+                        <p>“Seja você quem for, seja qual for a posição que você tenha na vida, exerça sempre com amor e
+                            com muita fé em Deus.”</p>
+                    </div>
+
+                    <div class="icone-card">
+                        <h3>Boudica</h3>
+                        <p>“Eu sou uma mulher, mas estou resolvida como qualquer homem.”</p>
+                    </div>
+
+                    <div class="icone-card">
+                        <h3>Harriet Tubman</h3>
+                        <p>“Eu libertei mil escravos. Poderia ter libertado mais mil se eles soubessem que eram
+                            escravos.”</p>
+                    </div>
+
+                    <div class="icone-card">
+                        <h3>Marie Curie</h3>
+                        <p>“Nada na vida deve ser temido, apenas compreendido.”</p>
+                    </div>
+
+                    <div class="icone-card">
+                        <h3>Cristiano Ronaldo</h3>
+                        <p>“O talento te coloca no topo. A disciplina te mantém lá.”</p>
+                    </div>
+
+                    <div class="icone-card">
+                        <h3>Conor McGregor</h3>
+                        <p>“Duvidar de mim foi o combustível da minha ascensão.”</p>
+                    </div>
+
+                    <div class="icone-card">
+                        <h3>Kobe Bryant</h3>
+                        <p>“O trabalho duro vence o talento quando o talento não trabalha.”</p>
+                    </div>
+
+                    <div class="icone-card">
+                        <h3>Miyamoto Musashi</h3>
+                        <p>“Se você sabe controlar sua mente, já venceu o maior inimigo.”</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!--Gifs de Momentos Inesqueciveis-->
+        <section id="gifs" class="gif-section">
+            <h2 class="gif-title">Momentos Lendários</h2>
+            <p class="gif-subtitle">A energia dos maiores — agora no seu caminho.</p>
+
+            <div class="gif-grid">
+
+                <div class="gif-card">
+                    <img src="img/gifs/amelia-earhart-gif.gif" alt="Amelia Earhart GIF">
+                </div>
+
+                <div class="gif-card">
+                    <img src="img/gifs/ayrton-senna-gif.gif" alt="Ayrton Senna GIF">
+                </div>
+
+                <div class="gif-card">
+                    <img src="img/gifs/cristiano-ronaldo-gif.gif" alt="Cristiano Ronaldo GIF">
+                </div>
+
+                <div class="gif-card">
+                    <img src="img/gifs/frida-kahlo-gif.gif" alt="Frida Kahlo GIF">
+                </div>
+                <div class="gif-card">
+                    <img src="img/gifs/mohamed-ali-gif.gif" alt="Mohamed Ali GIF">
+                </div>
+                <div class="gif-card">
+                    <img src="img/gifs/rock-lee-gif.gif" alt="Rock Lee GIF">
+                </div>
+                <div class="gif-card">
+                    <img src="img/gifs/serena-williams-gif.gif" alt="Serena Williams GIF">
+                </div>
+                <div class="gif-card">
+                    <img src="img/gifs/spider-man-gif.gif" alt="Spider Man GIF">
+                </div>
+
+            </div>
+        </section>
+
+
+        <!--TESTE DE FORÇA-->
+        <section id="Forca" class="quiz-section">
+            <div class="quiz-inner">
+                <h2>Qual Força Você Tem?</h2>
+                <p class="muted">Responda rápido — 3 perguntas para descobrir sua força dominante.</p>
+
+                <form id="quizForm" class="quiz-form" onsubmit="return false;">
+                    <div class="quiz-q">
+                        <p class="q-title">1. Quando surge uma tarefa difícil, você tende a:</p>
+                        <label><input type="radio" name="q1" value="A"> Quebrá-la em passos pequenos e começar</label>
+                        <label><input type="radio" name="q1" value="B"> Buscar motivação externa (música, vídeo)</label>
+                        <label><input type="radio" name="q1" value="C"> Treinar mais antes de tentar</label>
+                    </div>
+
+                    <div class="quiz-q">
+                        <p class="q-title">2. Seu maior motor é:</p>
+                        <label><input type="radio" name="q2" value="A"> Rotina / hábito</label>
+                        <label><input type="radio" name="q2" value="B"> Propósito / visão</label>
+                        <label><input type="radio" name="q2" value="C"> Vergonha / medo de falhar</label>
+                    </div>
+
+                    <div class="quiz-q">
+                        <p class="q-title">3. Em 1 palavra você é:</p>
+                        <label><input type="radio" name="q3" value="A"> Persistente</label>
+                        <label><input type="radio" name="q3" value="B"> Inspirado</label>
+                        <label><input type="radio" name="q3" value="C"> Combativo</label>
+                    </div>
+
+                    <div class="quiz-actions">
+                        <button id="quizSubmit" type="button" class="btn primary">Ver resultado</button>
+                        <button id="quizReset" type="button" class="btn ghost">Resetar</button>
+                    </div>
+                </form>
+
+                <div id="quizResult" class="quiz-result" hidden></div>
+            </div>
+        </section>
+
+
+        <!--Historias Inspiradoras-->
+        <section id="Historia" class="historia-section">
+            <div class="historia-inner">
+
+                <h2 class="historia-title">Histórias Que Inspiram</h2>
+                <p class="historia-sub">Como pessoas comuns se tornaram extraordinárias.</p>
+
+                <div class="historia-grid">
+
+                    <div class="historia-card">
+                        <img src="img/history-amelia-earhart.jpeg" alt="Amelia Earhart">
+                        <h3>Amelia Earhart</h3>
+                        <p>A mulher que disse “por que não?” antes do mundo permitir.
+                            Amelia Earhart foi a primeira mulher a voar sozinha sobre o Atlântico.
+                            Em uma época em que mulheres nem podiam votar em muitos lugares, ela decidiu atravessar o
+                            céu.
+                            Venceu falhas mecânicas, tempestades e o próprio medo — sempre com um sorriso calmo de quem
+                            sabia:
+                            “Liberdade é uma escolha, não um presente.”
+                            Desapareceu tentando dar a volta ao mundo.
+                            Virou eterna tentando o impossível.
+                        </p>
+                    </div>
+
+                    <div class="historia-card">
+                        <img src="img/history-cristiano-ronaldo.jpeg" alt="Cristiano Ronaldo">
+                        <h3>Cristiano Ronaldo</h3>
+                        <p>Do nada absoluto ao topo absoluto.
+                            CR7 cresceu dividindo quarto, dividindo roupa, dividindo tudo.
+                            Era magro demais, chorava treinando, era motivo de piada — até que transformou cada
+                            humilhação em combustível.
+                            Quando deixou a família aos 12 anos, prometeu:
+                            “Eu vou ser o melhor.”
+                            Hoje ele é.
+                            Não porque nasceu pronto, mas porque se criou na força, na disciplina e no ódio de desistir.
+                        </p>
+                    </div>
+
+                    <div class="historia-card">
+                        <img src="img/history-frida-kahlo.jpeg" alt="Frida Kahlo">
+                        <h3>Frida Kahlo</h3>
+                        <p>Dor que virou identidade. Sofrimento que virou arte.
+                            Frida enfrentou doença, acidente, cirurgias, abandono, preconceito.
+                            Cada golpe partia seu corpo — e cada fratura revelava uma parte nova de sua alma.
+                            Em vez de esconder a dor, ela pintou.
+                            Em vez de suavizar suas cicatrizes, transformou-as em símbolo.
+                            Frida não buscava perfeição.
+                            Ela buscava verdade.
+                        </p>
+                    </div>
+
+                    <div class="historia-card">
+                        <img src="img/history-michael-jordan.jpeg" alt="Michael Jordan">
+                        <h3>Michael Jordan</h3>
+                        <p>O cara que foi cortado do time — e virou o maior da história.
+                            Jordan não entrou no time da escola.
+                            Chorou. Sofreu. Voltou no dia seguinte.
+                            Treinou todos os dias como se estivesse atrás de alguém melhor — mesmo quando já era o
+                            melhor.
+                            Perdeu finais, errou arremessos decisivos, falhou repetidas vezes.
+                            E é por isso que venceu.
+                            MJ não jogava basquete.
+                            Ele jogava contra seus limites.</p>
+                    </div>
+
+                    <div class="historia-card">
+                        <img src="img/history-nelson-mandela.jpeg" alt="Nelson Mandela">
+                        <h3>Nelson Mandela</h3>
+                        <p>O homem que ficou preso — e saiu mais livre do que todos.
+                            Mandela passou 27 anos numa cela apertada, quebrando pedras, recebendo cartas censuradas e
+                            sendo tratado como invisível.
+                            Poderia ter saído com ódio.
+                            Mas saiu com propósito.
+                            Negociou paz com quem humilhou seu povo, transformou revolta em estratégia e liderou uma
+                            nação quebrada para longe do caos.
+                            Mandela provou que força não é gritar.
+                            Força é resistir até o mundo ouvir.</p>
+                    </div>
+
+                    <div class="historia-card">
+                        <img src="img/history-conor-mcgregor.jpeg" alt="Conor McGregor">
+                        <h3>Conor McGregor</h3>
+                        <p>O encanador falido que virou o rosto do UFC.
+                            Antes da fama, Conor ganhava tão pouco que mal pagava gasolina pra treinar.
+                            Era julgado, chamado de iludido, visto como mais um.
+                            Mas ele tinha algo que ninguém podia medir: convicção brutal.
+                            Apostou tudo no próprio sonho, treinou como se fosse morrer no dia seguinte e falou como se
+                            já tivesse vencido.
+                            E venceu.
+                            Conor provou que autoconfiança não é arrogância — é arma.</p>
+                    </div>
+
+                    <div class="historia-card">
+                        <img src="img/history-ronda-rousey.jpeg" alt="Ronda Rousey">
+                        <h3>Ronda Rousey</h3>
+                        <p>A primeira mulher a transformar luta em revolução.
+                            Ronda perdeu o pai cedo, lutou contra depressão, morou em garagem e treinou até o corpo
+                            quebrar.
+                            Virou medalhista olímpica.
+                            Entrou no UFC quando diziam que “mulher não vende luta”.
+                            Ela vendeu história.
+                            Judiou de limites, finalizou lendas em segundos e abriu portas que o esporte mantinha
+                            trancadas.
+                            Ronda não foi só campeã — foi terremoto.</p>
+                    </div>
+
+                    <div class="historia-card">
+                        <img src="img/history-joana-d'arc.jpeg" alt="Joana d’Arc">
+                        <h3>Joana d’Arc</h3>
+                        <p>A camponesa que virou comandante — e mudou um país.
+                            Aos 17 anos, Joana não sabia ler nem escrever.
+                            Mas sabia o que sentia: “fui feita para lutar”.
+                            Enfrentou exércitos, armaduras, reis e a própria morte com uma coragem que assustava homens
+                            treinados.
+                            Guiou tropas, recuperou cidades e mudou o rumo da França.
+                            Morreu jovem, mas não derrotada.
+                            Joana não precisava viver muito — precisava viver com propósito.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </main>
+
+    <!--Musica-->
+    <div class="music-wrapper" aria-hidden="false">
+
+        <button id="musicToggle" class="music-toggle" aria-label="Abrir player de músicas" title="Modo música">
+            <img src="img/music-button.png" alt="Ícone música" />
+        </button>
+
+        <div id="musicMenu" class="music-menu" aria-hidden="true">
+            <div class="music-header">
+                <strong>Modo Imersivo</strong>
+                <button id="musicClose" class="music-close" aria-label="Fechar">✕</button>
+            </div>
+
+            <div class="music-list">
+                <button class="music-track" data-src="audio/white-flag.mp3" data-key="white" aria-pressed="false">
+                    <span class="track-title">White Flag</span>
+                    <span class="track-action">▶</span>
+                </button>
+
+                <button class="music-track" data-src="audio/royalty.mp3" data-key="royalty" aria-pressed="false">
+                    <span class="track-title">Royalty</span>
+                    <span class="track-action">▶</span>
+                </button>
+            </div>
+
+            <div class="music-controls">
+                <label for="musicVolume">Volume</label>
+                <input id="musicVolume" type="range" min="0" max="1" step="0.05" value="0.35" />
+                <button id="musicStop" class="btn-ghost">Parar</button>
+            </div>
+
+            <div class="music-note">Clique em uma faixa para tocar. Música só inicia após interação.</div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-content">
+
+            <div class="footer-social-floating">
+                <a href="https://www.linkedin.com/in/henrique-aguiar-269b89233/" target="_blank">
+                    <img src="img/linkedin-button.png" alt="Linkedin">
+                </a>
+                <a href="https://github.com/Sants-Coder" target="_blank">
+                    <img src="img/github-button.png" alt="Github">
+                </a>
+            </div>
+
+            <div class="footer-title-area">
+                <h1>WHY NOT?</h1>
+            </div>
+
+        </div>
+
+        <a href="#" class="back-to-top">↑</a>
+
+        <p>&copy; 2025 Henrique Aguiar +
+            <a href="https://www.alura.com.br/">Alura</a> +
+            <a href="https://www.google.com/">Google</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="theme.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+[
+    {
+        "label": "Sobre",
+        "keywords": "sobre inicio começo historia origem propósito introdução",
+        "target": "#Sobre"
+    },
+    {
+        "label": "Frases Motivacionais",
+        "keywords": "frases citações inspiração motivação mensagem força coragem",
+        "target": "#Frases"
+    },
+    {
+        "label": "Galeria",
+        "keywords": "galeria fotos imagens icones arte mural",
+        "target": "#Galeria"
+    },
+    {
+        "label": "Mentalidade",
+        "keywords": "mentalidade mente foco disciplina resiliência identidade força mental",
+        "target": "#Mentalidade"
+    },
+    {
+        "label": "Inspiração",
+        "keywords": "inspiração videos artigos desempenho hábito crescimento evolução",
+        "target": "#Inspiracao"
+    },
+    {
+        "label": "Ícones da Superação",
+        "keywords": "ícones senna goggins jordan ali cr7 mcgregor atletas lendas",
+        "target": "#Icones"
+    },
+    {
+        "label": "Gifs",
+        "keywords": "A energia dos maiores — agora no seu caminho",
+        "target": "#gifs"
+    },
+    {
+        "label": "Quiz",
+        "keywords": "Quiz para descobrir sua motivação",
+        "target": "#Forca"
+    }
+]
