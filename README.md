@@ -148,9 +148,3 @@ cd why-not
 code .
 
 ---
-
-🧾 Licença
-
-Este projeto está sob a licença MIT.
-
----
