@@ -121,7 +121,7 @@ Além disso, o projeto participa da seleção dos **100 melhores projetos da ime
 
 A frase oficial que deve estar na postagem:
 
-> *“Estou participando da seleção dos melhores projetos da Imersão Dev com Alura + Google". Onde desenvolvemos aplicações que simulam desafios reais do mundo da tecnologia.*
+> *“Estou participando da seleção dos melhores projetos da Imersão Dev com Alura + Google".*
 
 ---
 
