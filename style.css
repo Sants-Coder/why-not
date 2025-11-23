@@ -1183,7 +1183,7 @@ footer a:hover {
     }
 
     .footer-content h1 {
-        font-size: 4.5rem;
+        font-size: 4.2rem;
     }
 
     footer p {
@@ -1226,5 +1226,12 @@ footer a:hover {
 
     .shortcut {
         display: none;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .footer-content h1 {
+        font-size: 4.0rem;
     }
 }
