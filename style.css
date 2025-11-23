@@ -59,6 +59,12 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/*Permite que trave o Scrow Vertical ao abrir Spotlight*/
+body.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
+
 a {
     color: var(--accent);
     text-decoration: none;
@@ -493,6 +499,14 @@ section h2 {
     background: var(--card-hover);
 }
 
+.inspiracao-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    gap: 30px;
+}
+
 .inspiracao-card h3 {
     font-family: var(--fonte-principal);
     margin-bottom: 10px;
@@ -808,7 +822,8 @@ section h2 {
 .music-menu {
     pointer-events: auto;
     width: 260px;
-    max-width: calc(100vw - 56px - 48px); /* Garanto que o menu não saia da tela. */
+    max-width: calc(100vw - 56px - 48px);
+    /* Garanto que o menu não saia da tela. */
     background: linear-gradient(180deg, rgba(10, 10, 10, 0.9), rgba(8, 8, 8, 0.95));
     border-radius: 12px;
     padding: 12px;

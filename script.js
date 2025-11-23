@@ -17,29 +17,37 @@ function openSpotlight() {
     const spotlight = document.getElementById("spotlight");
     const input = document.getElementById("spotlightInput");
 
+    // Mostrar spotlight
     spotlight.style.display = "flex";
     spotlight.classList.add("open");
 
+    // Travar scroll
+    document.body.classList.add("no-scroll");
+
     input.value = "";
     input.focus();
+    renderSpotlightResults(spotlightData);
 
-    renderSpotlightResults([]);
     spotlightOpen = true;
     spotlightIndex = -1;
 }
 
-// Função para fechar o Spotlight
 function closeSpotlight() {
     const spotlight = document.getElementById("spotlight");
+
     spotlight.classList.remove("open");
 
     setTimeout(() => {
         spotlight.style.display = "none";
-    }, 150); // Pequeno atraso para a animação de saída acontecer
+    }, 150);
+
+    // Destravar scroll
+    document.body.classList.remove("no-scroll");
 
     spotlightOpen = false;
     spotlightIndex = -1;
 }
+
 
 // Mostra os resultados da busca na tela
 function renderSpotlightResults(results) {
