@@ -95,14 +95,14 @@ Cada parte da interface foi revista manualmente (menus, busca, cards, player, fo
 ## 🏗️ Estrutura de Pastas
 
 📁 why-not
-├── 📂 audio
-├── 📂 img
-├── 📄 data.json
-├── 📄 index.html
-├── 📄 style.css
-├── 📄 script.js
-├── 📄 theme.js
-└── 📄 README.md
+   ├── 📂 audio
+   ├── 📂 img
+   ├── 📄 data.json
+   ├── 📄 index.html
+   ├── 📄 style.css
+   ├── 📄 script.js
+   ├── 📄 theme.js
+   └── 📄 README.md
 
 ---
 
