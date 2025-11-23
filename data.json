@@ -38,5 +38,10 @@
         "label": "Quiz",
         "keywords": "Quiz para descobrir sua motivação",
         "target": "#Forca"
+    },
+    {
+        "label": "Histórias",
+        "keywords": "Historias que elevam sua motivação",
+        "target": "#Historia"
     }
 ]
