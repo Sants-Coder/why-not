@@ -463,6 +463,88 @@ section h2 {
     line-height: 1.6;
 }
 
+/*BOTÃO DE COMPARTILHAR*/
+
+/*Container do botão dentro do card */
+.mentalidade-card {
+    position: relative;
+}
+
+/* O botão em si */
+.share-btn {
+    position: absolute;
+    top: 14px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+    background: rgba(255, 255, 255, 0.08);
+    border: none;
+    border-radius: 6px;
+    padding: 6px;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(-8px);
+    pointer-events: none;
+    backdrop-filter: blur(3px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease,
+        background 0.2s ease;
+}
+
+/* Ícone do botão */
+.share-btn img {
+    width: 20px;
+    height: 20px;
+    filter: var(--filter-icon);
+    opacity: 0.85;
+}
+
+/* Aparência ao passar o mouse no card */
+.mentalidade-card:hover .share-btn {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+/* Hover no botão em si */
+.share-btn:hover {
+    background: rgba(255, 255, 255, 0.18);
+}
+
+/*ESTILO DO BOTÃO DE COMPARTILHAR POR TEMA*/
+
+/*TEMA ESCURO*/
+html:not([data-theme="light"]) .share-btn {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+html:not([data-theme="light"]) .share-btn:hover {
+    background: rgba(255, 255, 255, 0.18);
+}
+
+/* ícone branco */
+html:not([data-theme="light"]) .share-btn img {
+    content: url("img/share-button.png");
+}
+
+/*TEMA CLARO*/
+html[data-theme="light"] .share-btn {
+    background: rgba(0, 0, 0, 0.10);
+}
+
+html[data-theme="light"] .share-btn:hover {
+    background: rgba(0, 0, 0, 0.18);
+}
+
+html[data-theme="light"] .share-btn img {
+    content: url("img/share-button-black.png");
+}
+
+
 /*INSPIRAÇÃO*/
 .inspiracao-section {
     background: var(--bg-alt);
@@ -1130,7 +1212,7 @@ footer a:hover {
     }
 
     .hero-text h1 {
-        font-size: 2rem;
+        font-size: 3rem;
         line-height: 1.4;
     }
 
@@ -1226,6 +1308,19 @@ footer a:hover {
 
     .shortcut {
         display: none;
+    }
+
+    .share-btn {
+        width: 28px;
+        height: 28px;
+        top: 10px;
+        right: 10px;
+        padding: 5px;
+    }
+
+    .share-btn img {
+        width: 18px;
+        height: 18px;
     }
 }
 
